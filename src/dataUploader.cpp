@@ -1,8 +1,8 @@
 #include "config.h"
 
-const char* UID = "b4c0c6469bb945fab089410c97423d58";             // 用户私钥，巴法云控制台获取
-const char* pubTopic = "ED8266001";
-const char* subTopic = "ED8266001CTRL";
+const char* UID = "Paste your private key here";             // 用户私钥，巴法云控制台获取，粘贴到这里
+const char* pubTopic = "ED8266001";                          // 发布主题，与巴法云控制台创建的topic一致
+const char* subTopic = "ED8266001CTRL";                      // 订阅主题，与巴法云控制台一致
 
 SoftTimer ConnectTimer(5000);
 

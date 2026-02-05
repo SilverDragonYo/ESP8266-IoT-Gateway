@@ -7,6 +7,11 @@ unsigned long blinkTime_once = 1000;
 
 ledMode currentMode = LED_OFF;
 
+/**
+ * @brief 更新LED模式
+ * 
+ * @param newMode 新的LED模式
+ */
 void setLedMode(ledMode newMode) {
     if(newMode != currentMode) {
         currentMode = newMode;

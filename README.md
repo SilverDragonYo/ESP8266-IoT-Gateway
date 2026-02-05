@@ -61,23 +61,24 @@ Once connected to the Internet, it will periodically publish data to the MQTT se
 
 ## Demo
 
-- Coming soon……
+- [ESP8266 IoT 小项目功能演示｜配网、MQTT 通信与状态指示](https://www.bilibili.com/video/BV1hGFvzwEGy/?vd_source=dc6062a3b05d6ddfefe6b194258183c9)
 
 ## Quick Start
 
 0. Create an account on [Bemfa.com](https://cloud.bemfa.com/).
-1. Copy the private key at **MQTT Device Cloud**. Paste it into the UID variable on `line 3`, `src/dataUploader.cpp`.
+1. Create two device named `ED8266001` and `ED8266001CTRL` at **MQTT Device Cloud**.
 2. Install **Visual Studio Code** & **PlatformIO extension**.
-3. PIO Home → Open Project.
-4. Select the project folder containing `platformio.ini`.
-5. Build & Upload.
+3. Clone / Download the project.
+4. PIO Home → Open Project.
+5. Select the project folder containing `platformio.ini`.
+6. Copy the private key at **MQTT Device Cloud**. Paste it into the UID variable on `line 3`, `src/dataUploader.cpp`.
+7. Build & Upload.
 
 
 
 <div style="display: flex;justify-content: center;">
     <img src="https://pic.electro-dragon.site/keqingSuccess.png" width="180">
 </div>
-
 
 
 
