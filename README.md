@@ -72,7 +72,15 @@ Once connected to the Internet, it will periodically publish data to the MQTT se
 4. Select the project folder containing `platformio.ini`.
 5. Build & Upload.
 
-<img src="https://pic.electro-dragon.site/keqingSuccess.png" width="180" style="display: flex;justify-content: center;">
+
+
+<div style="display: flex;justify-content: center;">
+    <img src="https://pic.electro-dragon.site/keqingSuccess.png" width="180">
+</div>
+
+
+
+
 
 
 
