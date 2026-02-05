@@ -1,6 +1,6 @@
 ## Introduction
 
-A project based on ESP8266 and Wi-Fi provisioning, network management, cloud communication for embedded devices.
+An ESP8266-based project for Wi-Fi provisioning and MQTT-based cloud communication in embedded systems.
 
 On first boot, users need to connect to the hotspot of the device, enter the configuration page and finish Wi-Fi provisioning. Then it will automatically reconnect and monitor the connecting state.
 
@@ -72,7 +72,7 @@ Once connected to the Internet, it will periodically publish data to the MQTT se
 4. Select the project folder containing `platformio.ini`.
 5. Build & Upload.
 
-<img src="https://pic.electro-dragon.site/keqingSuccess.png" width="180">
+<img src="https://pic.electro-dragon.site/keqingSuccess.png" width="180" style="display: flex;justify-content: center;">
 
 
 
