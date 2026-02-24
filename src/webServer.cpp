@@ -64,6 +64,19 @@ void serverSetup() {
         server.send_P(200, "text/html", index_html);
     });
 
+    // 处理安卓、iOS、Windows系统的网络连接测试请求
+    server.on("/generate_204", HTTP_GET, []() {
+        server.send_P(200, "text/html", index_html);
+    });
+
+    server.on("/library/test/success.html", HTTP_GET, []() {
+        server.send_P(200, "text/html", index_html);
+    });
+
+    server.on("/connecttest.txt", HTTP_GET, []() {
+        server.send_P(200, "text/html", index_html);
+    });
+
     server.on("/wifi", HTTP_POST, []() {
         char ssid[21];
         char password[21];
@@ -80,12 +93,12 @@ void serverSetup() {
         wifiConfigMode = false;
     });
 
-    server.on("/confirm", HTTP_POST, []() {
-        server.send(200, "text/html", index_html);
-    });
-
     server.onNotFound([]() {
-        server.send_P(200, "text/html", index_html);
+        if(wifiConfigMode) {
+            server.send_P(200, "text/html", index_html);
+        } else {
+            server.send(404, "text/plain", "not found");
+        }
     });
     server.begin();
 }
